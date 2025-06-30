@@ -1,0 +1,316 @@
+.main{
+     background-color: #222021;
+}
+.header{
+    background-color: #1e0c06;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+padding: 30px;
+border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 4px 10px rgba(226, 166, 166, 0.2);
+}
+ 
+.navlinks{
+    display: flex;
+    gap: 30px;
+   
+}
+.navlinks a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+} 
+.work{
+    color: white;
+    font-size: 30px;
+   padding: 50px;
+ text-align:center;
+}
+.oak img{
+
+  width: 100%;
+  
+  border-radius: 10px;
+}
+.oak{
+    display: flex;
+    flex-direction: column;
+    
+    width:15%;
+   
+    line-height: 250%;
+    
+    
+}
+
+.oak h4{
+font-size:20px;
+color: white;
+text-align: center;
+
+}
+.dur{
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+.dur img{
+    width: 13px;
+}
+.durtxt{align-items: center;
+    font-size: x-large;
+    color: white;
+}
+.woodtype{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.ourwork h1{
+       color: white;
+    font-size: 30px;
+   padding: 50px;
+ text-align:center;
+}
+.ourwork{
+    padding: 25px;
+}
+.advantages{
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+.advntmain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+
+}
+.advntimg{
+ width: 22%;
+}
+
+.advnttxt{
+    color: white;
+  
+
+}
+.abouttxt h1,
+.abouttxt p {
+color: white;
+}
+.abouttxt{
+    padding: 100px;
+}
+.about{
+    width: 90%;
+    background-color: #1e0c06;
+    display: flex;
+    justify-content: space-evenly;
+   
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  gap: 30px;
+  padding: 30px;
+  box-shadow: 
+  0 -4px 20px rgba(226, 166, 166, 0.2),   /* top */
+  4px 0 20px rgba(226, 166, 166, 0.2),    /* right */
+  0 4px 20px rgba(226, 166, 166, 0.2); 
+  
+}
+.abtimg{
+    width: 25%;position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 50vh;
+    
+}
+.iamges1{
+    position: relative;
+}
+.images2{
+    position: absolute;
+    top: 15%;
+   left: -40%;
+    
+
+}
+.images2 img{
+    border: 10px solid #1e0c06;
+    border-radius: 40px;
+    width: 12vw;
+ 
+}
+
+.images1 img,
+.images3 img{
+    width: 8vw;
+}
+.questions h1{
+color: white;
+text-align: center;
+padding: 30px;
+}
+ .help-footer-wrapper {
+  position: relative;
+}
+
+
+.help {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 30px;
+}
+
+/* Form inputs */
+.form input,
+.form textarea {
+  display: block;
+  width: 300px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #728bad;
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Send button */
+.formbtn {
+  padding: 10px 30px;
+  background-color: #728bad;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Help text */
+.helptxt p {
+  color: white;
+  font-size: 16px;
+  max-width: 300px;
+}
+
+/* Help image goes behind footer */
+.helpimg {
+  position: absolute;
+  bottom: -50px; /* adjust how much to overlap */
+  right: 29%;
+  z-index: 0;
+  width: 20%;
+}
+
+/* Footer on top of image */
+.footer {
+  position: relative;
+  z-index: 1;
+  background-color: #222021;
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  box-shadow: 0 -4px 20px rgb(146, 142, 142);
+}
+
+/* Footer logo and phone */
+.footelogo img,
+.footerphone img {
+  height: 40px;
+  margin-right: 10px;
+}
+.footerphone img{
+    width: 18%;
+}
+.footerphone p{
+    font-size: large;
+}
+.footerloc{
+    display: flex;
+    align-items: center;
+}
+.footerphone {
+  display: flex;
+  align-items: center;
+}
+/* ===== RESPONSIVE FIXES (Only layout tweaks) ===== */
+@media (max-width: 660px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .navlinks {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+  }
+
+  .herotxt {
+    width: 90%;
+  }
+
+  .images {
+    width: 100%;
+    align-items: center;
+  }
+
+  .woodtype {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ourwork .container {
+    flex-direction: column;
+  }
+
+  .advntmain {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about {
+    flex-direction: column;
+    border-radius: 30px;
+  }
+
+  .abtimg {
+    order: -1;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .help {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .helpimg {
+    display: none; /* optional: hide decorative image on small screens */
+  }
+}

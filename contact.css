@@ -1,0 +1,83 @@
+.main{
+     background-color: #222021;
+}
+.header{
+    background-color: #1e0c06;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+padding: 30px;
+border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 4px 10px rgba(226, 166, 166, 0.2);
+}
+ 
+.navlinks{
+    display: flex;
+    gap: 30px;
+   
+}
+.navlinks a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+} 
+.contmain{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 150px;
+    align-items: center;
+}
+.contact h1{
+    color: white;
+    font-size: xxx-large;
+}
+.footerloc{
+    display: flex;
+}
+.footerloc p{
+    color: white;
+}
+.footerphone{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footerphone p{
+    color: white;
+}
+.map img{
+    width: 50%;
+}
+.footer {
+  position: relative;
+  z-index: 1;
+  background-color: #222021;
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  box-shadow: 0 -4px 20px rgb(146, 142, 142);
+}
+.footelogo img,
+.footerphone img {
+  height: 40px;
+  margin-right: 10px;
+}
+.footerphone img{
+    width: 18%;
+}
+.footerphone p{
+    font-size: large;
+}
+.footerloc{
+    display: flex;
+    align-items: center;
+}
+.footerphone {
+  display: flex;
+  align-items: center;
+}
