@@ -1,13 +1,14 @@
 .main{
     background-color: #222021;
-   
+   width: 100%;
   background-image: url("./images/Vector 23.png");
   background-repeat: repeat-x;       /* repeat left to right only */
   background-position: top center;   /* align to top */
   background-size: contain; 
 }
 .navbar-toggler {
-border: 1px solid white;
+background-color: #ffdbbb;
+border: 2px solid white;
 }
 
 .navbar-toggler-icon {
@@ -23,6 +24,7 @@ border: 1px solid white;
     display: flex;
     flex-direction: column;
      min-height: 90vh;
+     width: 100%;
     
   
 }
@@ -56,14 +58,14 @@ border: 1px solid white;
     
 }
 .herotxt h1{
-    font-size: 90px;
+    font-size: 5vw;
     font-weight: 500;
     text-transform: uppercase;
-    line-height: 80%;
+    line-height: 100%;
     margin: 0px;
 }
 .herotxt p {
-    font-size: 30px;
+    font-size: 1vw;
     font-weight: 400;
     color: #ffdbbb;
    
@@ -121,16 +123,16 @@ padding-right: 80px;
 }
 .oak img{
 
-  width: 100%;
+  width: 15vw;
   
   border-radius: 10px;
 }
 .oak{
     display: flex;
     flex-direction: column;
-    
+    gap: 10px;
     width:15%;
-   
+ text-align: center;
     line-height: 250%;
     
     
@@ -139,7 +141,7 @@ padding-right: 80px;
 .oak h4{
 font-size:20px;
 color: white;
-text-align: center;
+
 
 }
 .dur{
@@ -178,7 +180,7 @@ text-align: center;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    padding: 20px;
+    padding: 50px;
 
 }
 .advntimg{
@@ -195,18 +197,18 @@ text-align: center;
 color: white;
 }
 .abouttxt{
-    padding: 100px;
+    width: 27%;
 }
 .about{
     width: 90%;
     background-color: #1e0c06;
     display: flex;
-    justify-content: space-evenly;
-   
+    justify-content: flex-end;
+   align-items: center;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-  gap: 30px;
-  padding: 30px;
+  gap: 15%;
+  padding: 10px;
   box-shadow: 
   0 -4px 20px rgba(226, 166, 166, 0.2),   /* top */
   4px 0 20px rgba(226, 166, 166, 0.2),    /* right */
@@ -217,7 +219,8 @@ color: white;
     width: 25%;position: relative;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content:space-around;
+    align-items: center;
     height: 50vh;
     
 }
@@ -226,8 +229,8 @@ color: white;
 }
 .images2{
     position: absolute;
-    top: 15%;
-   left: -40%;
+    top: 25%;
+   left: -10%;
     
 
 }
@@ -312,7 +315,10 @@ padding: 30px;
   color: white;
   box-shadow: 0 -4px 20px rgb(146, 142, 142);
 }
-
+.help-footer-wrapper {
+  position: relative;
+  overflow: hidden; /* Add this */
+}
 /* Footer logo and phone */
 .footelogo img,
 .footerphone img {
@@ -334,7 +340,7 @@ padding: 30px;
   align-items: center;
 }
 /* ===== RESPONSIVE FIXES (Only layout tweaks) ===== */
-@media (max-width: 660px) {
+@media (max-width: 600px) {
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -348,27 +354,40 @@ padding: 30px;
   }
 
   .hero {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  width: 90%;
+   
+  
     border-radius: 30px;
   }
 
-  .herotxt {
-    width: 90%;
+  .herotxt h1 {
+    font-size: 5vw;
+    line-height: 130%;
+  }
+  .herotxt p{
+    font-size:2vw ;
   }
 
   .images {
+    width: 50%;
+    align-items: center;
+  }
+  .herobtn{
+    padding: 10px 10px;
     width: 100%;
+  }
+  .dur{
     align-items: center;
+    justify-content: space-around;
   }
 
-  .woodtype {
-    flex-direction: column;
-    align-items: center;
+  .durtxt {
+    font-size: small;
+    line-height: 100%;
+    
   }
 
-  .ourwork .container {
+  .ourwork .c {
     flex-direction: column;
   }
 
@@ -376,18 +395,46 @@ padding: 30px;
     flex-direction: column;
     text-align: center;
   }
+  .advntimg{
+    width: 45%;
+  }
+.about {
+  flex-direction: column;
+  
+ 
 
-  .about {
-    flex-direction: column;
-    border-radius: 30px;
+  }
+  .abouttxt {
+ width: 80%;
+ padding-top: 20px ;
+ 
+
+  }
+.abouttxt h1{
+  font-size: xx-large;
+}
+
+.abtimg{
+  width: 80%;
+  align-items: end;
+  justify-content: space-around;
+ 
+
+}
+.images2{
+left: 15%;
+   top: 24%;
+}
+  .images1 img, .images3 img{
+ width: 30%;
   }
 
-  .abtimg {
-    order: -1;
-    margin-bottom: 20px;
-    align-items: center;
-  }
-
+.images2 img {
+    border: 10px solid #1e0c06;
+    border-radius: 40px;
+    width: 40%;
+   
+}
   .help {
     flex-direction: column;
     align-items: center;
