@@ -297,7 +297,7 @@ padding: 30px;
 /* Help image goes behind footer */
 .helpimg {
   position: absolute;
-  bottom: -50px; /* adjust how much to overlap */
+  bottom: 0px; /* adjust how much to overlap */
   right: 29%;
   z-index: 0;
   width: 20%;

@@ -137,7 +137,7 @@ padding: 30px;
 /* Help image goes behind footer */
 .helpimg {
   position: absolute;
-  bottom: -50px; /* adjust how much to overlap */
+  bottom: 0px; /* adjust how much to overlap */
   right: 29%;
   z-index: 0;
   width: 20%;
@@ -155,7 +155,10 @@ padding: 30px;
   color: white;
   box-shadow: 0 -4px 20px rgb(146, 142, 142);
 }
-
+.help-footer-wrapper {
+  position: relative;
+  overflow: hidden; /* Add this */
+}
 /* Footer logo and phone */
 .footelogo img,
 .footerphone img {
@@ -176,6 +179,7 @@ padding: 30px;
   display: flex;
   align-items: center;
 }
+
 /* ===== RESPONSIVE FIXES (Only layout tweaks) ===== */
 @media (max-width: 660px) {
   .navbar {

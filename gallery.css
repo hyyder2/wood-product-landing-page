@@ -4,6 +4,7 @@
 .header{
     background-color: #1e0c06;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-evenly;
 padding: 30px;
@@ -158,7 +159,7 @@ color: white;
 text-align: center;
 padding: 30px;
 }
- .help-footer-wrapper {
+  .help-footer-wrapper {
   position: relative;
 }
 
@@ -205,10 +206,10 @@ padding: 30px;
 /* Help image goes behind footer */
 .helpimg {
   position: absolute;
-  bottom: -50px; /* adjust how much to overlap */
+  bottom: 0px; /* adjust how much to overlap */
   right: 29%;
   z-index: 0;
-  width: 20%;
+  width: 15%;
 }
 
 /* Footer on top of image */
@@ -223,7 +224,10 @@ padding: 30px;
   color: white;
   box-shadow: 0 -4px 20px rgb(146, 142, 142);
 }
-
+.help-footer-wrapper {
+  position: relative;
+  overflow: hidden; /* Add this */
+}
 /* Footer logo and phone */
 .footelogo img,
 .footerphone img {
@@ -244,8 +248,9 @@ padding: 30px;
   display: flex;
   align-items: center;
 }
+
 /* ===== RESPONSIVE FIXES (Only layout tweaks) ===== */
-@media (max-width: 660px) {
+@media (max-width: 600px) {
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -259,27 +264,40 @@ padding: 30px;
   }
 
   .hero {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  width: 90%;
+   
+  
     border-radius: 30px;
   }
 
-  .herotxt {
-    width: 90%;
+  .herotxt h1 {
+    font-size: 5vw;
+    line-height: 130%;
+  }
+  .herotxt p{
+    font-size:2vw ;
   }
 
   .images {
+    width: 50%;
+    align-items: center;
+  }
+  .herobtn{
+    padding: 10px 10px;
     width: 100%;
+  }
+  .dur{
     align-items: center;
+    justify-content: space-around;
   }
 
-  .woodtype {
-    flex-direction: column;
-    align-items: center;
+  .durtxt {
+    font-size: small;
+    line-height: 100%;
+    
   }
 
-  .ourwork .container {
+  .ourwork .c {
     flex-direction: column;
   }
 
@@ -287,18 +305,46 @@ padding: 30px;
     flex-direction: column;
     text-align: center;
   }
+  .advntimg{
+    width: 45%;
+  }
+.about {
+  flex-direction: column;
+  
+ 
 
-  .about {
-    flex-direction: column;
-    border-radius: 30px;
+  }
+  .abouttxt {
+ width: 80%;
+ padding-top: 20px ;
+ 
+
+  }
+.abouttxt h1{
+  font-size: xx-large;
+}
+
+.abtimg{
+  width: 80%;
+  align-items: end;
+  justify-content: space-around;
+ 
+
+}
+.images2{
+left: 15%;
+   top: 24%;
+}
+  .images1 img, .images3 img{
+ width: 30%;
   }
 
-  .abtimg {
-    order: -1;
-    margin-bottom: 20px;
-    align-items: center;
-  }
-
+.images2 img {
+    border: 10px solid #1e0c06;
+    border-radius: 40px;
+    width: 40%;
+   
+}
   .help {
     flex-direction: column;
     align-items: center;

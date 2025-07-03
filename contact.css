@@ -1,9 +1,19 @@
+body{
+     background-color: #222021;
+     
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
 .main{
      background-color: #222021;
+    
 }
 .header{
     background-color: #1e0c06;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-evenly;
 padding: 30px;
@@ -24,60 +34,85 @@ border-bottom-left-radius: 40px;
     font-weight: 700;
     line-height: 100%;
 } 
-.contmain{
+ 
+.last{
     display: flex;
-    justify-content: space-evenly;
-    padding: 150px;
+justify-content: space-evenly;
+    padding: 50px;
+    gap: 50px;
+    height: 60vh;
     align-items: center;
 }
-.contact h1{
-    color: white;
-    font-size: xxx-large;
-}
-.footerloc{
+.contact{
     display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
-.footerloc p{
+.conttxt{
+    
+}
+.conttxt h1{
     color: white;
+    font-size: 2vw;
 }
+.footerloc,
 .footerphone{
     display: flex;
     align-items: center;
+    
     gap: 10px;
 }
-.footerphone p{
-    color: white;
+.footerphone p, .footerloc p{
+color: white;
+}
+.map img{
+    width: 80%;
+}
+.phoneloc{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #222021;
+    align-items: center;
+    height: 15vh;
+ box-shadow: 0 -4px 20px rgb(146, 142, 142);
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .navlinks {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+  }
+  .last{
+    flex-direction: column;
+height: 70vh;
+    text-align: center;
+    
+  }
+  .contact{
+    gap: 20px;
+  }
+  .conttxt h1{
+    
+    font-size: 8vw;
 }
 .map img{
     width: 50%;
 }
-.footer {
-  position: relative;
-  z-index: 1;
-  background-color: #222021;
-  padding: 50px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  color: white;
-  box-shadow: 0 -4px 20px rgb(146, 142, 142);
+.footer{
+padding: 20px;
 }
-.footelogo img,
-.footerphone img {
-  height: 40px;
-  margin-right: 10px;
+.footelogo img{
+    width: 70%;
 }
-.footerphone img{
-    width: 18%;
-}
-.footerphone p{
-    font-size: large;
-}
-.footerloc{
-    display: flex;
-    align-items: center;
-}
-.footerphone {
-  display: flex;
-  align-items: center;
 }
