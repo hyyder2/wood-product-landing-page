@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
+
+
+    .main {
+      background-color: #222021;
+      width: 100%;
+    }
+
+    .header {
+      background-color: #1e0c06;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 30px;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 4px 10px rgba(226, 166, 166, 0.2);
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 30px;
+
+    }
+
+    .navlinks a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 100%;
+    }
+
+    .table1 th {
+      padding: 15px 15px 4px 12px;
+      /* top, right, bottom, left */
+      line-height: 1;
+      text-align: left;
+
+    }
+
+     .table1 td {
+      padding: 15px 18px 4px 15px;
+      /* top, right, bottom, left */
+      line-height: 1;
+    }
+
+     .table2 th,
+     .tablesrow2 th  {
+      padding: 15px 15px 4px 12px;
+      /* top, right, bottom, left */
+      line-height: 1;
+      text-align: left;
+
+    }
+
+     .table2 td,
+     .tablesrow2 td {
+      padding: 15px 18px 4px 15px;
+      /* top, right, bottom, left */
+      line-height: 1;
+    }
+
+
+    h1 {
+      color: white;
+      padding: 40px;
+      text-align: center;
+      font-size: xxx-large;
+
+    }
+
+  
+    .images, .imges34{
+      display: flex;
+    
+      justify-content: center;
+      gap: 20px;
+      width: 50%;
+      margin: 0px auto;
+      padding: 10px;
+    }
+.questions h1{
+color: white;
+text-align: center;
+padding: 30px;
+}
+ .help-footer-wrapper {
+  position: relative;
+}
+
+
+.help {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 30px;
+}
+
+/* Form inputs */
+.form input,
+.form textarea {
+  display: block;
+  width: 300px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #728bad;
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Send button */
+.formbtn {
+  padding: 10px 30px;
+  background-color: #728bad;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Help text */
+.helptxt p {
+  color: white;
+  font-size: 16px;
+  max-width: 300px;
+}
+
+/* Help image goes behind footer */
+.helpimg {
+  position: absolute;
+  bottom: 0px; /* adjust how much to overlap */
+  right: 29%;
+  z-index: 0;
+  width: 15%;
+}
+
+/* Footer on top of image */
+.footer {
+  position: relative;
+  z-index: 1;
+  background-color: #222021;
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  box-shadow: 0 -4px 20px rgb(146, 142, 142);
+}
+.help-footer-wrapper {
+  position: relative;
+  overflow: hidden; /* Add this */
+}
+/* Footer logo and phone */
+.footelogo img,
+.footerphone img {
+  height: 40px;
+  margin-right: 10px;
+}
+.footelogo{
+  display: flex;
+}
+.footerphone img{
+    width: 18%;
+}
+.footerphone p{
+    font-size: large;
+}
+.footerloc{
+    display: flex;
+    align-items: center;
+}
+.footerphone {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 430px){
+ 
+  .help{
+    flex-direction: column-reverse;
+    padding: 20px;
+    
+  }
+  h1{
+    font-size: medium;
+  }
+  p{
+  padding: 10px;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <section class="main">
+    <section class="header">
+      <div class="log"><img src="./images/Group 9.png" alt=""></div>
+      <div class="navlinks">
+        <a href="./index.html">Home</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./price.html">Price For Services</a>
+        <a href="./aboutus.html">About us</a>
+        <a href="./contact.html">Contact</a>
+
+      </div>
+    </section>
+    <h1>PRICE LIST</h1>
+   <div class="pricimg">
+    <div class="images">
+      <div class="img1"><img src="./images/Group 19 (3).png" alt="" width="100%" height="100%"></div>
+      <div class="img2"> <img src="./images/Group 20.png" alt="" width="100%" height="100%"></div>  </div>
+      <div class="imges34">
+      <div class="img3"><img src="./images/Group 29.png" alt="" width="100%" height="100%"></div>
+      <div class="img4"><img src="./images/Group 34 (1).png" width="100%" height="100%"></div></div>
+
+  
+   </div>
+    <div class="questions">
+            <h1>ANY QUESTIONS?</h1>
+        </div>
+
+        <div class="help-footer-wrapper" style="position: relative;">
+            <div class="help">
+                <div class="form">
+                    <input type="text" placeholder="Your name" id="name">
+                    <input type="text" placeholder="Your Telephone number" id="phone">
+                    <textarea id="question" placeholder="Your Question"></textarea>
+                    <button class="formbtn">Send</button>
+                </div>
+
+                <div class="helptxt">
+                    <p>Write to us and we will be sure to <br> answer all your questions and give <br> you a
+                        comprehensive consultation.</p>
+                </div>
+
+                <div class="helpimg">
+                    <img src="./images/image (6).png" alt="" width="120%">
+                </div>
+            </div>
+
+            <section class="footer">
+                <div class="footelogo">
+                    <img src="./images/Group 9.png" alt="">
+                </div>
+                <div class="footerphone">
+                    <img src="./images/Vector (4).png" alt="">
+                    <p>+420 000 000 000</p>
+                </div>
+                <div class="footerloc"><img src="./images/bi_geo-alt.png" alt="">
+                    <p>Na Plzeňce 1166/0 <br>
+                        150 00</p>
+                </div>
+            </section>
+        </div>
+
+  
+  </section>
+</body>
+
+</html>

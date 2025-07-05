@@ -325,6 +325,9 @@ padding: 30px;
   height: 40px;
   margin-right: 10px;
 }
+.footelogo{
+  display: flex;
+}
 .footerphone img{
     width: 18%;
 }
@@ -443,9 +446,27 @@ left: 15%;
 
   .footer {
     flex-direction: column;
-    gap: 20px;
+     align-items: center;
+    gap: 40px;
+    
+    height: 60vh;
+  
+    margin: 0px auto;
   }
-
+  .footelogo{
+    
+    align-items: center;
+    justify-content: center;
+  }
+.footelogo img{
+  width: 85%;
+  height: 100%;
+}
+.footerphone {
+  width: 50vw;
+  align-items: center;
+  justify-content: center;
+}
   .helpimg {
     display: none; /* optional: hide decorative image on small screens */
   }
